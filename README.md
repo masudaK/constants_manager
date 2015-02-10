@@ -34,15 +34,15 @@ consts = constants_manager.ConstantsManager()
 print(consts.get('val_only_default'))
 ```
 
-if you want to use some constants which differed under environments, set the environments values like this.
+if you want to use some constants which differed under environments, set the environments variables like this.
 
 ```
 ENV=dev python sample.py
 ```
 
-So you can access the value of "dev" section for using the environments value.
+So you can access the value of "dev" section for using the environments variables.
 
-If you do not set any environments value, you can access the default value.
+If you do not set any environments variables, you can access the default value.
 So if you used those "constatns.ini" and use "flag" constant, it returns "False", not return 'True'.
 
 
