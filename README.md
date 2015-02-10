@@ -27,7 +27,7 @@ you write a code like below.
 
 
 ```
-!/usr/bin/env python
+!#/usr/bin/env python
 from constants_manager import constants_manager
 
 consts = constants_manager.ConstantsManager()
