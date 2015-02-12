@@ -12,7 +12,7 @@ class ConstantsManager():
         self.constants_name = constants_name
 
     def __get_environment(self):
-        __env_default = 'default'
+        __env_default = 'DEFAULT'
         __constants_name = self.constants_name
         __env = os.environ[__constants_name] if __constants_name in os.environ else __env_default
         return __env
