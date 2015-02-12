@@ -12,7 +12,7 @@ $pip install constants_manager
 Setup "constants.ini".
 
 ```
-[DEFAULT]
+[default]
 flag = False
 val_only_default = val_only_default
 
