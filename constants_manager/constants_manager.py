@@ -10,6 +10,9 @@ class ConstantsManager():
         self.config_file_name = config_file_name
         self.constants_name = constants_name
 
+    def __getitem__(self, key):
+        return self.get(key)
+
     def __get_environment(self):
         __env_default = 'DEFAULT'
         __constants_name = self.constants_name
