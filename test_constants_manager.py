@@ -1,6 +1,7 @@
 from constants_manager.constants_manager import ConstantsManager
 import os
 
+
 class TestConstantsManager():
     def test_get_default_value(self):
         __expected = 'val_only_default'
