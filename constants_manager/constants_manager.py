@@ -23,4 +23,3 @@ class ConstantsManager():
         __env = self.__get_environment()
         __val = config.get(__env, key)
         return __val
-
