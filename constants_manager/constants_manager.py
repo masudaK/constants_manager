@@ -3,7 +3,6 @@ try:
 except ImportError:
     import configparser
 import os
-import logging
 
 
 class ConstantsManager():
