@@ -1,5 +1,6 @@
 from constants_manager.constants_manager import ConstantsManager
 import os
+import pytest
 
 
 class TestConstantsManager():
@@ -40,6 +41,5 @@ class TestConstantsManager():
     def test_using_not_exists_os_environment_and_not_find_key(self):
         os.environ["ENV_DUMMY"] = 'dev'
         consts = ConstantsManager(constants_name='DUMMY')
-        import pytest
         with pytest.raises(Exception):
             consts.get('val_only_dev')
