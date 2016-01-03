@@ -57,5 +57,10 @@ The differences is that "constants_manager" is case-sensitivity. It distinguish 
 ## Contribute
 - Issue
 - Fork and pull requests. 
-- contact @masudaK
+- automatic test execution
+- if you had some trouble, contact @masudaK
 
+## Test Flow
+- run nosetests to the test file
+- various version tests with using tox
+- CI with travis
