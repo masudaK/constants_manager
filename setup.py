@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import sys
 
 setup(name='constants_manager',
-      version='0.0.5',
+      version='0.0.6',
       description='a library of managing constants.',
       long_description="""This library is help you to use managing constants. Especially when you creating web application.""",
       author='Kenichi Masuda',
