@@ -3,7 +3,6 @@ try:
 except ImportError:
     import configparser
 import os
-import logging
 
 
 class ConstantsManager():
@@ -24,4 +23,3 @@ class ConstantsManager():
         __env = self.__get_environment()
         __val = config.get(__env, key)
         return __val
-
