@@ -10,18 +10,12 @@ class ConstantsManager():
         self.config = configparser.RawConfigParser()
         self.config.optionxform = str
         self.config.read(config_file_name)
-        self.constants_name = constants_name
+        self.environment = 'DEFAULT'
+        if constants_name in os.environ:
+            self.environment = os.environ[constants_name]
 
     def __getitem__(self, key):
         return self.get(key)
 
-    def __get_environment(self):
-        __env_default = 'DEFAULT'
-        __constants_name = self.constants_name
-        __env = os.environ[__constants_name] if __constants_name in os.environ else __env_default
-        return __env
-
     def get(self, key):
-        __env = self.__get_environment()
-        __val = self.config.get(__env, key)
-        return __val
+        return self.config.get(self.environment, key)
