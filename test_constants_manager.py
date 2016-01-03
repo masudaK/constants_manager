@@ -1,4 +1,8 @@
 from constants_manager.constants_manager import ConstantsManager
+try:
+    from ConfigParser import NoOptionError
+except ImportError:
+    from configparser import NoOptionError
 import os
 import pytest
 
@@ -46,5 +50,5 @@ class TestConstantsManager():
     def test_using_not_exists_os_environment_and_not_find_key(self):
         os.environ["ENV_DUMMY"] = 'dev'
         consts = ConstantsManager(constants_name='DUMMY')
-        with pytest.raises(Exception):
+        with pytest.raises(NoOptionError):
             consts.get('val_only_dev')
