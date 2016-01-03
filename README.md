@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/masudaK/constants_manager.svg)](https://travis-ci.org/masudaK/constants_manager)
+
+
 # constants manager
 This library is for management of constants.
 This helps you to create an application which have the environments like dev, stg, prd.
