@@ -7,7 +7,9 @@ import os
 
 class ConstantsManager():
     def __init__(self, config_file_name='constants.ini', constants_name='ENV'):
-        self.config_file_name = config_file_name
+        self.config = configparser.RawConfigParser()
+        self.config.optionxform = str
+        self.config.read(config_file_name)
         self.constants_name = constants_name
 
     def __getitem__(self, key):
@@ -20,9 +22,6 @@ class ConstantsManager():
         return __env
 
     def get(self, key):
-        config = configparser.RawConfigParser()
-        config.optionxform = str
-        config.read(self.config_file_name)
         __env = self.__get_environment()
-        __val = config.get(__env, key)
+        __val = self.config.get(__env, key)
         return __val
