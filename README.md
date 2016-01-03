@@ -5,7 +5,7 @@ This helps you to create an application which have the environments like dev, st
 
 ## Installation
 ```
-$pip install constants_manager
+$ pip install constants_manager
 ```
 
 ## Usage
@@ -48,8 +48,7 @@ So if you used those "constatns.ini" and use "flag" constant, it returns "False"
 
 ## Misc
 There is the similar library which called "[constants](https://pypi.python.org/pypi/constants)".
-The differences is that using default key if you set the constants not existed, this means that "constants" raises error, but "constants manager" do not raise error. It returns default value.
-
+The differences is that "constants_manager" is case-sensitivity. It distinguish on case of key.
 
 
 ## Contribute
