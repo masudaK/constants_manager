@@ -10,7 +10,7 @@ python:
 install:
   - pip install tox tox-travis
   - pip install coverage coveralls
-  - pip pytest
+  - pip install pytest
 
 script:
   - tox -v
