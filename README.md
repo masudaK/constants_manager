@@ -60,6 +60,11 @@ The differences is that "constants_manager" is case-sensitivity. It distinguish 
 - automatic test execution
 - if you had some trouble, contact @masudaK
 
+
+## Contributor
+- [Satoshi SUZUKI](https://github.com/studio3104)
+
+
 ## Test Flow
 - run nosetests to the test file
 - various version tests with using tox
