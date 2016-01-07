@@ -64,3 +64,6 @@ The differences is that "constants_manager" is case-sensitivity. It distinguish 
 - run nosetests to the test file
 - various version tests with using tox
 - CI with travis
+
+## License
+MIT
