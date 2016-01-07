@@ -52,3 +52,14 @@ class TestConstantsManager():
         consts = ConstantsManager(constants_name='DUMMY')
         with pytest.raises(NoOptionError):
             consts.get('val_only_dev')
+
+        with pytest.raises(NoOptionError):
+            consts['val_only_dev']
+
+    def test_get_value_of_Capital_and_not_find_key(self):
+        consts = ConstantsManager()
+        with pytest.raises(NoOptionError):
+            consts.get('Val_only_default')
+
+        with pytest.raises(NoOptionError):
+            consts['Val_only_default']
