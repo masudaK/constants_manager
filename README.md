@@ -72,3 +72,7 @@ The differences is that "constants_manager" is case-sensitivity. It distinguish 
 
 ## License
 MIT
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/masudaK/constants_manager/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
